@@ -17,6 +17,14 @@ class Unix::Groups {
             $!password = $pass;
             @!users = $users.split(',');
         }
+
+        method Str() returns Str {
+            $!name;
+        }
+
+        method Numeric() returns Numeric {
+            $!gid;
+        }
     }
 
     has IO::Handle $!handle handles <lines>;
@@ -46,6 +54,18 @@ class Unix::Groups {
 
     method group-by-id(Int $id) returns Group {
         %!group-by-id{$id};
+    }
+
+    method groups-for-user(Str() $user) returns Array[Group] {
+        my Group @groups;
+
+        for self.groups -> $group {
+            if ?$group.users.grep($user) {
+                @groups.push($group);
+            }
+        }
+
+        @groups;
     }
 
 }
