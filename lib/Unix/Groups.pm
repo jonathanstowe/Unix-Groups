@@ -1,4 +1,4 @@
-use v6.c;
+use v6;
 
 =begin pod
 
@@ -16,7 +16,7 @@ my $groups = Unix::Groups.new;
 say "The logged in user is member of these groups:";
 
 for $groups.groups-for-user($*USER.Str) -> $group {
-	say $group.name;
+    say $group.name;
 }
 =end code
 
@@ -49,7 +49,7 @@ Returns the group specified by C<$name> or the type object if none exists.
 
 =head2 method group-by-id
 
-    method group-by-id(Int $id) returns User::Groups::Group 
+    method group-by-id(Int $id) returns User::Groups::Group
 
 Returns the group specified by the integer group id of the type object if
 none exists.
