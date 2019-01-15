@@ -105,11 +105,11 @@ class Unix::Groups:ver<0.0.3>:auth<github:jonathanstowe> {
             @!users = $users.split(',');
         }
 
-        method Str() returns Str {
+        method Str( --> Str ) {
             $!name;
         }
 
-        method Numeric() returns Numeric {
+        method Numeric( --> Numeric ) {
             $!gid;
         }
     }
@@ -124,7 +124,7 @@ class Unix::Groups:ver<0.0.3>:auth<github:jonathanstowe> {
         $!handle = GROUPFILE.IO.open();
     }
 
-    method groups() returns Array[Group] {
+    method groups( --> Array[Group] ) {
         if !?@!groups.elems {
             for self.lines.map({Group.new(line => $_)}).sort({$^a.gid}) -> $g {
                 @!groups.push($g);
@@ -135,15 +135,15 @@ class Unix::Groups:ver<0.0.3>:auth<github:jonathanstowe> {
         @!groups;
     }
 
-    method group-by-name(Str $name) returns Group {
+    method group-by-name(Str $name --> Group ) {
         %!group-by-name{$name};
     }
 
-    method group-by-id(Int $id) returns Group {
+    method group-by-id(Int $id --> Group ) {
         %!group-by-id{$id};
     }
 
-    method groups-for-user(Str() $user) returns Array[Group] {
+    method groups-for-user(Str() $user --> Array[Group] ) {
         my Group @groups;
 
         for self.groups -> $group {
@@ -154,8 +154,6 @@ class Unix::Groups:ver<0.0.3>:auth<github:jonathanstowe> {
 
         @groups;
     }
-
 }
 
 # vim: expandtab shiftwidth=4 ft=perl6
-
