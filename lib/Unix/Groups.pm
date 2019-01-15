@@ -87,7 +87,7 @@ This is a list of the names of the users that are members of the group.
 
 =end pod
 
-class Unix::Groups:ver<0.0.3>:auth<github:jonathanstowe> {
+class Unix::Groups:ver<0.0.4>:auth<github:jonathanstowe>:api<1.0> {
 
     constant GROUPFILE = '/etc/group';
 
