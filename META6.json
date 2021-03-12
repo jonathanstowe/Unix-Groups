@@ -1,15 +1,16 @@
 {
   "name": "Unix::Groups",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "auth": "github:jonathanstowe",
   "api": "1.0",
-  "description": "Access to the Unix group file in Perl 6",
+  "description": "Access to the Unix group file in Raku",
   "source-url": "git://github.com/jonathanstowe/Unix-Groups.git",
   "support": {
     "source": "git://github.com/jonathanstowe/Unix-Groups.git",
     "bugtracker": "https://github.com/jonathanstowe/Unix-Groups/issues"
   },
   "perl": "6.*",
+  "raku": "6.*",
   "resources": [
   ],
   "build-depends": [
@@ -33,5 +34,5 @@
   "authors": [
     "Jonathan Stowe <jns+git@gellyfish.co.uk>"
   ],
-  "meta-version": "0"
+  "meta-version": "1"
 }

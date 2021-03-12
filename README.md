@@ -1,10 +1,12 @@
 # Unix::Groups
 
-Access to the Unix group file in Perl 6
+Access to the Unix group file in Raku
+
+![Build Status](https://github.com/jonathanstowe/Tinky/workflows/CI/badge.svg)
 
 ## Synopsis
 
-```perl6
+```raku
 use Unix::Groups;
 
 my $groups = Unix::Groups.new;
@@ -31,8 +33,7 @@ may not necessarily reflect all the groups present, just the local ones.
 
 ## Installation
 
-Assuming you have a working Rakudo Perl 6 installation you should be able to
-install this with *zef* :
+Assuming you have a working Rakudo installation you should be able to install this with *zef* :
 
     # From the source directory
    
@@ -52,5 +53,5 @@ This is free software.
 
 Please see the [LICENCE](LICENCE) file in the distribution
 
-© Jonathan Stowe 2015, 2016, 2017, 2019
+© Jonathan Stowe 2015 - 2021
 

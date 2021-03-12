@@ -5,53 +5,53 @@
       "type": "file"
     },
     {
-      "name": "t",
+      "name": "Changes",
+      "type": "file"
+    },
+    {
+      "type": "file",
+      "name": "LICENCE"
+    },
+    {
       "type": "directory",
+      "name": "t",
+      "purpose": null,
       "children": [
         {
-          "name": "010-basic.t",
-          "type": "file"
+          "type": "file",
+          "name": "010-basic.t"
         },
         {
           "type": "file",
           "name": "020-groups.t"
         },
         {
-          "name": "001-meta.t",
-          "type": "file"
+          "type": "file",
+          "name": "001-meta.t"
         }
-      ],
-      "purpose": null
+      ]
     },
     {
-      "type": "file",
-      "name": "Changes"
-    },
-    {
-      "type": "file",
-      "name": "README.md"
-    },
-    {
+      "type": "directory",
+      "name": "lib",
       "purpose": null,
       "children": [
         {
           "children": [
             {
-              "name": "Groups.pm",
-              "type": "file"
+              "type": "file",
+              "name": "Groups.pm"
             }
           ],
-          "purpose": null,
+          "type": "directory",
           "name": "Unix",
-          "type": "directory"
+          "purpose": null
         }
-      ],
-      "type": "directory",
-      "name": "lib"
+      ]
     },
     {
       "type": "file",
-      "name": "LICENCE"
+      "name": "README.md"
     }
   ],
   "type": "layout"

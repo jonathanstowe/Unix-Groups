@@ -87,7 +87,7 @@ This is a list of the names of the users that are members of the group.
 
 =end pod
 
-class Unix::Groups:ver<0.0.4>:auth<github:jonathanstowe>:api<1.0> {
+class Unix::Groups:ver<0.0.5>:auth<github:jonathanstowe>:api<1.0> {
 
     constant GROUPFILE = '/etc/group';
 
@@ -156,4 +156,4 @@ class Unix::Groups:ver<0.0.4>:auth<github:jonathanstowe>:api<1.0> {
     }
 }
 
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku
