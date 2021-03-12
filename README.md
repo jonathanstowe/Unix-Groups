@@ -2,7 +2,7 @@
 
 Access to the Unix group file in Raku
 
-![Build Status](https://github.com/jonathanstowe/Tinky/workflows/CI/badge.svg)
+![Build Status](https://github.com/jonathanstowe/Unix-Groups/workflows/CI/badge.svg)
 
 ## Synopsis
 
