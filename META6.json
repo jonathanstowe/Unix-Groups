@@ -1,21 +1,30 @@
 {
-  "name": "Unix::Groups",
-  "version": "0.0.5",
-  "auth": "github:jonathanstowe",
   "api": "1.0",
-  "description": "Access to the Unix group file in Raku",
-  "source-url": "git://github.com/jonathanstowe/Unix-Groups.git",
-  "support": {
-    "source": "git://github.com/jonathanstowe/Unix-Groups.git",
-    "bugtracker": "https://github.com/jonathanstowe/Unix-Groups/issues"
-  },
-  "perl": "6.*",
+  "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
+  "meta-version": "1",
   "raku": "6.*",
+  "test-depends": [
+    "Test"
+  ],
+  "name": "Unix::Groups",
+  "provides": {
+    "Unix::Groups": "lib/Unix/Groups.pm"
+  },
+  "license": "Artistic-2.0",
+  "description": "Access to the Unix group file in Raku",
   "resources": [
   ],
   "build-depends": [
   ],
-  "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
+  "version": "0.0.6",
+  "auth": "zef:jonathanstowe",
+  "authors": [
+    "Jonathan Stowe <jns+git@gellyfish.co.uk>"
+  ],
+  "support": {
+    "source": "git://github.com/jonathanstowe/Unix-Groups.git",
+    "bugtracker": "https://github.com/jonathanstowe/Unix-Groups/issues"
+  },
   "depends": [
   ],
   "tags": [
@@ -24,15 +33,5 @@
     "system",
     "user"
   ],
-  "license": "Artistic-2.0",
-  "test-depends": [
-    "Test"
-  ],
-  "provides": {
-    "Unix::Groups": "lib/Unix/Groups.pm"
-  },
-  "authors": [
-    "Jonathan Stowe <jns+git@gellyfish.co.uk>"
-  ],
-  "meta-version": "1"
+  "source-url": "git://github.com/jonathanstowe/Unix-Groups.git"
 }
