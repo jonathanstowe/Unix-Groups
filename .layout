@@ -40,7 +40,7 @@
           "children": [
             {
               "type": "file",
-              "name": "Groups.pm"
+              "name": "Groups.rakumod"
             }
           ],
           "type": "directory",

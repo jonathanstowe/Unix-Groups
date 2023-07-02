@@ -8,7 +8,7 @@
   ],
   "name": "Unix::Groups",
   "provides": {
-    "Unix::Groups": "lib/Unix/Groups.pm"
+    "Unix::Groups": "lib/Unix/Groups.rakumod"
   },
   "license": "Artistic-2.0",
   "description": "Access to the Unix group file in Raku",
@@ -16,7 +16,7 @@
   ],
   "build-depends": [
   ],
-  "version": "0.0.6",
+  "version": "0.0.7",
   "auth": "zef:jonathanstowe",
   "authors": [
     "Jonathan Stowe <jns+git@gellyfish.co.uk>"
